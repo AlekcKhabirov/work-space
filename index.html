@@ -1,1 +1,92 @@
-go
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>work-space</title>
+</head>
+<body>
+    <header class="container header__container">
+        <img src="images/logo.svg" alt="логотип" class="header__logo">
+        <a href="#vacancies" class="header__link">Посмотреть вакансии</a>
+    </header>
+    <main>
+        <section class="hero hero__container">
+        <h1 class="hero__title">Найди работу 
+            <span class="blue_text">своей мечты</span> 
+        </h1>
+        <img src="images/Other 03.png" alt="картинка" class="hero__image">
+        </section>
+        <div class="vacancies" id="vacancies">
+            <div class="vacancies__container">
+            <section class="vacancies__filter filter">
+                <h2 class="filter__title">Фильтр</h2>
+                <form class="filter__form">
+                    <fieldset class="filter__fieldset">
+                        <legend class="filter__legend">Город</legend>
+                        <select class="filter__select" name="city" id="city" class="select__name">
+                            <option value="">выбрать город</option>
+                            <option value="" class="select__city">ufa</option>
+                            <option value="" class="select__city">samara</option>
+                            <option value="" class="select__city">chelubinsk</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="filter__fieldset">
+                        <legend class="filter__legend">Заработная плата</legend>
+                        <div class="filter__range">
+                            <input type="number" class="filter__input" name="pay-from" placeholder="от">
+                            <input type="number" class="filter__input" name="pay-to" placeholder="до">    
+                        </div>
+                    </fieldset>
+                    
+                    <div class="filter__checkboxes">
+                        <fieldset class="filter__fieldset">
+                            <legend class="filter__legend">Формат</legend>
+                            <label class="filter__label checkbox"><input class="checkbox" type="checkbox" value="Офис" name="format">Офис</label>
+                            <label class="filter__label checkbox"><input class="checkbox" type="checkbox" value="Удаленный" name="format">Удаленный</label>
+                            <label class="filter__label checkbox"><input class="checkbox" type="checkbox" value="Гибкий" name="format">Гибкий</label>
+                        </fieldset>
+                        <fieldset class="filter__fieldset">
+                            <legend class="filter__legend">Опыт работы</legend>
+                            <label class="filter___label checkbox"><input type="checkbox" class="checkbox" value="Не важно" name="experience">Не важно</label>
+                            <label class="filter___label checkbox"><input type="checkbox" class="checkbox" value="Без опыта" name="experience">Без опыта</label>
+                            <label class="filter___label checkbox"><input type="checkbox" class="checkbox" value="От 1 года до 3-х лет" name="experience">От 1 года до 3-х лет</label>
+                            <label class="filter___label checkbox"><input type="checkbox" class="checkbox" value="От 3-х лет" name="experience">От 3-х лет</label>
+                        </fieldset>
+                        <fieldset class="filter__fieldset">
+                            <legend class="filter__legend">Занятость</legend>
+                            <label class="filter___label checkbox"><input type="checkbox" class="checkbox" value="Полная" name="type">Полная</label>
+                            <label class="filter___label checkbox"><input type="checkbox" class="checkbox" value="Частичная" name="type">Частичная</label>
+                            <label class="filter___label checkbox"><input type="checkbox" class="checkbox" value="Стажировка" name="type">Стажировка</label>
+                            <label class="filter___label checkbox"><input type="checkbox" class="checkbox" value="Проектная работа" name="type">Проектная работа</label>
+                        </fieldset>
+                    </div>
+
+                    <div class="filter__btns">
+                        <button class="filter__btn btn" type="submit">Применить</button>
+                        <button class="filter__reset" type="filter__reset" value="" placeholder="Очистить"></button>
+                    </div>
+                    
+                </form>
+            </section>
+        
+            <section class="vacancies__cards cards">
+                <h2 class="cards__title visuale_hidden">список</h2>
+                <ul class="card__list">
+                    <li class="card__item card">
+                        <article>
+                            <h2 class="card__title">YADRO</h2>
+                            <p class="card__text">от 150 000₽</p>
+                            <p>полная занятость</p>
+                            <p>офис</p>
+                            <p>опыт от 3-х лет</p>
+                        </article>
+                    </li>
+                </ul>
+                
+            </section>
+        </div>
+    </div>
+    </main>
+</body>
+</html>
